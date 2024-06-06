@@ -32,9 +32,9 @@ def home():
 def profile():  
     return render_template("profile.html")
 
-@views.route("/json")
+@views.route("/jobs")
 def get_json():
-     return  jsonify({'name': 'tim', 'coolness': 10})
+     return  jsonify(JOBS)
 
 @views.route("/data")
 def get_data():
