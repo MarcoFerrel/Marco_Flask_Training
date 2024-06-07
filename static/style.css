@@ -7,40 +7,6 @@ body {
     max-width: 60%;
     margin: 0 auto;
 }
-/**************************************Nav Bar***************************************************/
-#main_nav {
-    background-color: #333; /* Background color of the navbar */
-    display: flex; /* Use flexbox */
-    justify-content: space-between; /* Items will be spaced evenly */
-}
-
-.nav_list {
-    list-style-type: none; /* Remove bullet points */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Use flexbox for list items */
-}
-
-.main_links {
-    margin-right: 10px; /* Add margin between list items */
-}
-
-.main_links:last-child {
-    margin-right: 0; /* Remove margin for the last list item */
-}
-
-.main_links a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px; /* Apply the same padding as other links */
-    text-decoration: none;
-}
-
-.main_links a:hover {
-    background-color: #111; /* Change background color on hover */
-}
-/**************************************Nav Bar***************************************************/
 
 #banner{
     display: block;

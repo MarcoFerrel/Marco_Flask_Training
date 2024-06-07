@@ -9,16 +9,10 @@
     <title>Home</title>
 </head>
 <body> 
-        <nav id = "main_nav">  
-            <ul class = "nav_list">
-                <li class="main_links"><a href="#">Home</a></li>
-                <li class="main_links"><a href="#">Portfolio</a></li>
-                <li class="main_links"><a href="#">Contact</a></li>
-              </ul>
-        </nav>
+    {% include 'nav.html' %}
+    <img class= "img-fluid" id="banner"
+    src="static/Banner.jpg" alt="Main Index Photo">
     <div id="container">
-        <img class= "img-fluid" id="banner"
-        src="static/Banner.jpg" alt="Main Index Photo">
             <h1 class="text-center">I love Pao Alvarado</h1> 
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur odio quo eos,
@@ -26,17 +20,14 @@
                     cto voluptates eum dolorum, dicta esse inventore suscipit.
                 </p>
             
-            <h1 class = "text-center">Job Positions</h1>
+            <h1 class = "text-center">Open Positions</h1>
                 <div>
                     {% for job in jobs %}
                       {% include 'jobitems.html' %}
                     {% endfor %}
-                    <div class = "text-center">
-                        <button type="button" class="btn btn-outline-primary">Contact us</button>
-                    </div>
                 </div>
 
-    
+                {% include 'footer.html' %}
     </div>
 <script type="text/javascript" 
         src="{{ url_for ('static', filename='index.js')}}"> 
