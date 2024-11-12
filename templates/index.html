@@ -4,32 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for ('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/styles/index.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Home</title>
+    <title>References</title>
 </head>
 <body> 
     {% include 'nav.html' %}
-    <div id="container">
-            <h1 class="text-center">About</h1> 
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur odio quo eos,
-                    dolores, praesentium totam eius soluta fugit iusto asperiores error sit archite
-                    cto voluptates eum dolorum, dicta esse inventore suscipit.
-                </p>
-            
-            <h1 class = "text-center">Experience</h1>
-                <div>
-                    {% for job in jobs %}
-                      {% include 'jobitems.html' %}
-                    {% endfor %}
+    <div class="container">
+        <main class="reference-container">
+            <h1 class="text-center mt-5 mb-4">Conference References</h1> 
+            <div class="reference-list">
+                <div class="reference-item">
+                    <p><strong>Rivas E, Eddy SR.</strong> A dynamic programming algorithm for RNA structure prediction including pseudoknots. <em>J Mol Biol.</em> 1999 Feb 5;285(5):2053-68. doi: <a href="https://doi.org/10.1006/jmbi.1998.2436" target="_blank">10.1006/jmbi.1998.2436</a>. PMID: 9925784.</p>
                 </div>
-
-                {% include 'footer.html' %}
+                <div class="reference-item">
+                    <p><strong>Theis, C., Janssen, S., Giegerich, R.</strong> Prediction of RNA Secondary Structure Including Kissing Hairpin Motifs. In: Moulton, V., Singh, M. (eds) Algorithms in Bioinformatics. WABI 2010. Lecture Notes in Computer Science(), vol 6293. Springer, Berlin, Heidelberg. doi: <a href="https://doi.org/10.1007/978-3-642-15294-8_5" target="_blank">10.1007/978-3-642-15294-8_5</a></p>
+                </div>
+                <div class="reference-item">
+                    <p><strong>Singh, J., Hanson, J., Paliwal, K. et al.</strong> RNA secondary structure prediction using an ensemble of two-dimensional deep neural networks and transfer learning. <em>Nat Commun.</em> 10, 5407 (2019). doi: <a href="https://doi.org/10.1038/s41467-019-13395-9" target="_blank">10.1038/s41467-019-13395-9</a></p>
+                </div>
+                <div class="reference-item">
+                    <p><strong>Fu L, Cao Y, Wu J, Peng Q, Nie Q, Xie X.</strong> UFold: fast and accurate RNA secondary structure prediction with deep learning. <em>Nucleic Acids Res.</em> 2022 Feb 22;50(3):e14. doi: <a href="https://doi.org/10.1093/nar/gkab1074" target="_blank">10.1093/nar/gkab1074</a>. PMID: 34792173; PMCID: PMC8860580.</p>
+                </div>
+            </div>
+        </main>
     </div>
-<script type="text/javascript" 
-        src="{{ url_for ('static', filename='index.js')}}"> 
-</script>
+<script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

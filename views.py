@@ -5,9 +5,7 @@ views = Blueprint(__name__, "views")
 JOBS = [
     {
         'id': 1,
-        'title': 'Data Analyst',
-        'location': "El Paso, Texas",
-        'salary': "$80,000"
+        'title': 'Rivas E, Eddy SR. A dynamic programming algorithm for RNA structure prediction including pseudoknots. J Mol Biol. 1999 Feb 5;285(5):2053-68. doi: 10.1006/jmbi.1998.2436. PMID: 9925784.',
     },
      {
         'id': 2,
